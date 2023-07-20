@@ -124,7 +124,7 @@ export const projects = [
     **관리자 : 도서 등록/수정, 대여된 도서 관리, 공지사항/자유게시판 관리, 회원 목록, 희망도서 신청 목록 관리
     **회원 : 도서 검색, 책 대여, 자유게시판 이용, 희망 도서 신청, 회원 정보 수정, 대여한 도서 목록 등`,
     tools: ["Java", "SpringBoot", "JSP", "MySQL"],
-    gitURL: "https://github.com/bananashow/wisdom-library",
+    gitURL: "https://my-portfolio-eosin-rho.vercel.app/",
   },
 
   {
