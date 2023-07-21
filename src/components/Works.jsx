@@ -1,16 +1,40 @@
+import { useState } from "react";
 import { styled } from "styled-components";
 import { ProjectCarousel } from "./ProjectCarousel";
 import { HashtagButton } from "./HashtagButton";
 import { BasicButton } from "./BasicButton";
 import { Link } from "react-router-dom";
 import { projects } from "../data";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 export const Works = () => {
+  const [projectRefsState, setProjectRefsState] = useState([]);
+
+  const handleIntersection = (index) => (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setProjectRefsState((prev) => {
+          const newState = [...prev];
+          newState[index] = true;
+          return newState;
+        });
+      }
+    });
+  };
+
   return (
     <>
       {projects.map((project, idx) => {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        const produceRef = useIntersectionObserver(handleIntersection(idx), {
+          rootMargin: "10px",
+        });
         return (
-          <Container key={idx}>
+          <Container
+            key={idx}
+            ref={produceRef}
+            className={projectRefsState[idx] ? "opacity-animation" : ""}
+          >
             <div className="title">
               <h3>{project.title}</h3>
               <div className="participation">{project.participation}</div>
@@ -78,6 +102,19 @@ const Container = styled.div`
   margin: 0 auto;
   border-radius: 32px;
   margin-bottom: 120px;
+
+  &.opacity-animation {
+    animation: opacity 4s;
+
+    @keyframes opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
 
   @media (max-width: 768px) {
     width: 99%;

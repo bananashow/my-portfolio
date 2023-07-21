@@ -5,6 +5,7 @@ export const Contact = () => {
     <>
       <ContactContainer>
         <h2>CONTACT</h2>
+        {/* 깃헙, 블로그 주소, 전화번호, 이메일, */}
       </ContactContainer>
     </>
   );
