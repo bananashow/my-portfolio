@@ -27,8 +27,9 @@ export const TechStack = () => {
                     const imageSrc = require(`../assets/skills/${imageName}`);
                     return (
                       <div key={idx} className="skills">
-                        <div>
+                        <div className="tooltip">
                           <img src={imageSrc} alt="skills" />
+                          <span className="tooltiptext">테스트</span>
                         </div>
                       </div>
                     );
@@ -68,6 +69,7 @@ const AlignBox = styled.div`
   h3 {
     font-size: 24px;
     margin: 48px 0 8px 12px;
+    padding: 0 32px;
 
     @media (max-width: 768px) {
       text-align: center;
@@ -79,6 +81,7 @@ const Images = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  padding: 0 32px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -103,17 +106,27 @@ const Images = styled.div`
     padding: 16px;
     position: relative;
 
-    div {
-      &:hover::after {
-        content: "";
-        width: 160px;
-        height: 80px;
-        background-color: white;
+    .tooltip {
+      position: relative;
+
+      &:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        height: 60px;
+        background-color: #fff;
+        color: black;
+        text-align: center;
+        border-radius: 12px;
+        padding: 8px;
         position: absolute;
         z-index: 99;
-        top: 110px;
-        left: -20px;
-        border-radius: 12px;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
