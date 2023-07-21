@@ -1,13 +1,15 @@
 import { useEffect } from "react";
 import { styled } from "styled-components";
 import { skillImages } from "../data.js";
+import { GradientButton } from "../components/GradientButton";
+import backgd from "../assets/skill_background.png";
 
 export const TechStack = () => {
   useEffect(() => {
     const importedImages = [];
-    skillImages.forEach((image) => {
-      image.images.forEach((imageName) => {
-        const importedImage = require(`../assets/skills/${imageName}`).default;
+    skillImages.forEach((category) => {
+      category.skillInfo.forEach((skill) => {
+        const importedImage = require(`../assets/skills/${skill.images}`);
         importedImages.push(importedImage);
       });
     });
@@ -15,21 +17,29 @@ export const TechStack = () => {
 
   return (
     <>
-      <TechStackContainer>
+      <TechStackContainer backgd={backgd}>
         <AlignBox>
           <h2>TECH STACK</h2>
           {skillImages.map((category, idx) => {
             return (
               <div key={idx}>
-                <h3># {category.category.toUpperCase()}</h3>
+                <div className="buttonWrap">
+                  <GradientButton>
+                    # {category.category.toUpperCase()}
+                  </GradientButton>
+                </div>
                 <Images>
-                  {category.images.map((imageName, idx) => {
-                    const imageSrc = require(`../assets/skills/${imageName}`);
+                  {category.skillInfo.map((skill, idx) => {
+                    const imageSrc = require(`../assets/skills/${skill.images}`);
                     return (
                       <div key={idx} className="skills">
                         <div className="tooltip">
-                          <img src={imageSrc} alt="skills" />
-                          <span className="tooltiptext">테스트</span>
+                          <img src={imageSrc} alt={skill.content} />
+                          <span className="tooltiptext">
+                            <strong>[ {skill.title} ]</strong>
+                            <br />
+                            {skill.content}
+                          </span>
                         </div>
                       </div>
                     );
@@ -45,14 +55,22 @@ export const TechStack = () => {
 };
 
 const TechStackContainer = styled.section`
+  background: url(${(props) => props.backgd}) fixed;
+  background-size: 80%;
   height: 100%;
   color: white;
   display: flex;
 `;
 
 const AlignBox = styled.div`
-  /* width: 70%; */
   margin: 0 auto;
+  padding-bottom: 36px;
+
+  & > div {
+    @media (max-width: 938px) {
+      margin: 12px;
+    }
+  }
 
   img {
     width: 80px;
@@ -66,14 +84,10 @@ const AlignBox = styled.div`
     margin: 64px 0 64px 0;
   }
 
-  h3 {
-    font-size: 24px;
-    margin: 48px 0 8px 12px;
-    padding: 0 32px;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
+  .buttonWrap {
+    font-size: 20px;
+    margin: 48px 0 16px 0;
+    padding: 0 14px;
   }
 `;
 
@@ -81,7 +95,7 @@ const Images = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0 32px;
+  padding: 0 4px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -115,15 +129,17 @@ const Images = styled.div`
 
       .tooltiptext {
         visibility: hidden;
-        width: 140px;
+        font-size: 13px;
+        width: 150px;
         height: 60px;
-        background-color: #fff;
-        color: black;
+        background-color: rgba(19, 21, 24, 0.9);
+        border: 1px solid #0d0a2b;
+        color: #fff;
         text-align: center;
         border-radius: 12px;
         padding: 8px;
         position: absolute;
-        z-index: 99;
+        z-index: 99999;
         top: 100px;
         left: 50%;
         transform: translateX(-50%);

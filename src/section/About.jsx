@@ -75,7 +75,9 @@ export const About = () => {
               </div>
             </div>
           </ImageBox>
-          {isOpen && <RightModal handleModal={handleModal} isOpen={isOpen} />}
+          <div className="modal-wrapper">
+            {isOpen && <RightModal handleModal={handleModal} isOpen={isOpen} />}
+          </div>
         </div>
       </AboutContainer>
     </>

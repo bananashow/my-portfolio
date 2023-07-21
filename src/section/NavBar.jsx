@@ -20,6 +20,7 @@ const NavigationBar = styled.nav`
   right: 32px;
   top: 60%;
   height: 100vh;
+  opacity: 0.7;
   z-index: 999;
 
   ul {

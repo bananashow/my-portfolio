@@ -1,37 +1,103 @@
+// TECH STACK IMAGE
 export const skillImages = [
   {
     category: "front-end",
-    images: [
-      "skill_html.png",
-      "skill_css.png",
-      "skill_javascript.png",
-      "skill_react.png",
-      "skill_vue.png",
-      "skill_typescript.png",
-      "skill_redux.png",
-      "skill_recoil.png",
+    skillInfo: [
+      {
+        images: "skill_html.png",
+        title: "HTML5",
+        content: "웹 접근성을 준수하여 마크업 할 수 있어요.",
+      },
+      {
+        images: "skill_css.png",
+        title: "CSS3",
+        content: "레이아웃을 충분히 이해하고 사용할 수 있어요.",
+      },
+      {
+        images: "skill_javascript.png",
+        title: "JavaScript",
+        content: "문법을 이해하고, DOM 조작과 이벤트 처리가 가능해요.",
+      },
+      {
+        images: "skill_react.png",
+        title: "React",
+        content: "상태와 속성, 조건부 렌더링 등을 다룰 수 있어요.",
+      },
+      {
+        images: "skill_vue.png",
+        title: "Vue",
+        content: "데이터 바인딩, 이벤트 처리 등을 구현해요.",
+      },
+      {
+        images: "skill_typescript.png",
+        title: "TypeScript",
+        content: "문법을 이해하고, 계속 학습하려고 노력해요.",
+      },
+      {
+        images: "skill_redux.png",
+        title: "Redux",
+        content: "Redux를 이용하여 전역 상태 관리를 할 수 있어요.",
+      },
+      {
+        images: "skill_recoil.png",
+        title: "Recoil",
+        content: "Atoms과 Selectors의 개념을 알고 사용해요.",
+      },
     ],
   },
   {
     category: "back-end",
-    images: [
-      "skill_java.png",
-      "skill_jsp.png",
-      "skill_python.png",
-      "skill_springboot.png",
-      "skill_mysql.png",
+    skillInfo: [
+      {
+        images: "skill_java.png",
+        title: "Java",
+        content: "객체 지향을 이해하고 DB를 연동할 수 있어요.",
+      },
+      {
+        images: "skill_springboot.png",
+        title: "SpringBoot",
+        content: "MVC 패턴으로 웹사이트를 만들 수 있어요.",
+      },
+      {
+        images: "skill_jsp.png",
+        title: "JSP",
+        content: "원하는대로 동적인 이벤트 처리를 할 수 있어요.",
+      },
+      {
+        images: "skill_python.png",
+        title: "Python",
+        content: "저의 입문 언어로, 문법을 학습하여 사용할 수 있어요.",
+      },
+      {
+        images: "skill_mysql.png",
+        title: "MySQL",
+        content: "DB 생성 및 쿼리 작성, 테이블 설계, 연동을 해요.",
+      },
     ],
   },
   {
     category: "using tools",
-    images: [
-      "skill_styledComponents.png",
-      "skill_photoshop.png",
-      "skill_vscode.png",
+    skillInfo: [
+      {
+        images: "skill_styledComponents.png",
+        title: "Styled-Components",
+        content: "컴포넌트로 스타일을 관리하고 다룰 수 있어요.",
+      },
+      {
+        images: "skill_photoshop.png",
+        title: "Photoshop",
+        content: "이미지의 편집, 합성, 보정 작업을 할 수 있어요.",
+      },
+      {
+        images: "skill_vscode.png",
+        title: "Git",
+        content: "git을 이용하여 협업이 가능해요.",
+      },
     ],
   },
 ];
 
+// WORKS
 export const projects = [
   {
     id: 0,
@@ -157,8 +223,8 @@ export const projects = [
     participation: "개인 프로젝트",
     mainContent: `현재 보고 계신 포트폴리오 웹사이트를 제작하였습니다. 컴포넌트의 재사용성을 높이려고 노력하였고, 평소에 많이 사용해보지 않은 애니매이션 효과를 접할 수 있었습니다. Intersection Observer API를 커스텀 훅을 활용하여 애니메이션 효과를 주었으며, Vercel을 이용하여 웹사이트를 배포하였습니다.
     
-    포트폴리오 웹사이트 제작 과정에서 디자인과 색상에 대해 많은 고민을 하였습니다. 포트폴리오이기 때문에 특별한 애착을 가지고 만들었으며, 색의 조화와 배색에 대한 디자인 이론적인 부분이 부족하여 어려움을 겪기도 했습니다. 하지만 이러한 어려움을 극복하면서 나만의 스타일로 첫 포트폴리오를 완성하였습니다.
-    제 포트폴리오를 통해 제가 어떤 개발자인지와 디자인적인 감각을 보여주고 싶으며, 더 나아가서 더욱 풍부한 경험과 성장으로 더 멋진 프로젝트를 만들어내고 싶습니다.`,
+    포트폴리오 웹사이트 제작 과정에서 디자인과 색상에 대해 많은 고민을 하였습니다. 포트폴리오이기 때문에 특별한 애착을 가지고 만들었으며, 색의 조화와 배색에 대한 디자인 이론적인 부분이 부족하여 어려움을 겪기도 했습니다. 하지만 이러한 어려움을 극복하면서 저만의 스타일로 첫 포트폴리오를 완성하였습니다.
+    포트폴리오를 통해 제가 어떤 개발자이고, 동시에 디자인적인 감각을 어떻게 담고 싶었는지를 보여주고자 했습니다. 더 나아가, 더욱 풍부한 경험과 성장을 통해 더 멋진 프로젝트를 구현하고자 하는 욕심이 있습니다.`,
     tools: ["React", "Styled-Components", "반응형"],
     gitURL: "https://github.com/bananashow/wisdom-library",
   },

@@ -56,7 +56,7 @@ const Modal = styled.section`
   z-index: 10000;
   background-color: #292626;
   width: 800px;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
@@ -70,6 +70,11 @@ const Modal = styled.section`
     h2 {
       font-size: 36px;
       padding: 32px 0;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+        padding: 12px 0;
+      }
     }
 
     h3 {
@@ -85,6 +90,10 @@ const Modal = styled.section`
       font-weight: 300;
       margin: 0 0 12px 0;
       line-height: 28px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -117,5 +126,6 @@ const Modal = styled.section`
 
   @media (max-width: 768px) {
     width: 400px;
+    font-size: 12px;
   }
 `;

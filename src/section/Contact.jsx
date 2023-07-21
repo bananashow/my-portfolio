@@ -1,18 +1,16 @@
 import { styled } from "styled-components";
-import { Works } from "../components/Works";
 
-export const Project = () => {
+export const Contact = () => {
   return (
     <>
-      <ProjectContainer>
-        <h2>PROJECT</h2>
-        <Works />
-      </ProjectContainer>
+      <ContactContainer>
+        <h2>CONTACT</h2>
+      </ContactContainer>
     </>
   );
 };
 
-const ProjectContainer = styled.section`
+const ContactContainer = styled.section`
   width: 100%;
   height: 100%;
   color: white;
