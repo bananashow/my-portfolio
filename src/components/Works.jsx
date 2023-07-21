@@ -4,18 +4,34 @@ import { HashtagButton } from "./HashtagButton";
 import { BasicButton } from "./BasicButton";
 import { Link } from "react-router-dom";
 import { projects } from "../data";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+import { useState } from "react";
 
 export const Works = () => {
+  const [containerRefState, setContainerRef] = useState(false);
+
+  const containerRef = useIntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        setContainerRef(entry.isIntersecting);
+      });
+    },
+    { rootMargin: "-10px" }
+  );
+
   return (
     <>
-      {projects.map((project) => {
+      {projects.map((project, idx) => {
         return (
-          <Container key={project.id}>
+          <Container
+            key={idx}
+            ref={containerRef}
+            className={containerRefState ? "opacity-animation" : ""}
+          >
             <div className="title">
               <h3>{project.title}</h3>
               <div className="participation">{project.participation}</div>
             </div>
-
             <ProjectWrap>
               <ProjectImage>
                 <div className="carousel">
@@ -79,6 +95,19 @@ const Container = styled.div`
   margin: 0 auto;
   border-radius: 32px;
   margin-bottom: 120px;
+
+  &.opacity-animation {
+    animation: opacity 4s;
+
+    @keyframes opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
 
   @media (max-width: 768px) {
     width: 99%;

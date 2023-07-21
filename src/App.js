@@ -4,7 +4,7 @@ import { About } from "./section/About";
 import { Intro } from "./section/Intro";
 import { NavBar } from "./section/NavBar";
 import { Project } from "./section/Project";
-// import { TechStack } from "./section/TechStack";
+import { TechStack } from "./section/TechStack";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       <Intro />
       <About />
-      {/* <TechStack /> */}
+      <TechStack />
       <Project />
     </>
   );

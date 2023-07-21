@@ -1,11 +1,34 @@
-export const skillLogos = [
+export const skillImages = [
   {
-    category: "backend",
-    imgURL: [],
+    category: "front-end",
+    images: [
+      "skill_html.png",
+      "skill_css.png",
+      "skill_javascript.png",
+      "skill_react.png",
+      "skill_vue.png",
+      "skill_typescript.png",
+      "skill_redux.png",
+      "skill_recoil.png",
+    ],
   },
   {
-    category: "frontend",
-    imgURL: [],
+    category: "back-end",
+    images: [
+      "skill_java.png",
+      "skill_jsp.png",
+      "skill_python.png",
+      "skill_springboot.png",
+      "skill_mysql.png",
+    ],
+  },
+  {
+    category: "using tools",
+    images: [
+      "skill_styledComponents.png",
+      "skill_photoshop.png",
+      "skill_vscode.png",
+    ],
   },
 ];
 
@@ -132,9 +155,9 @@ export const projects = [
     images: ["portfolio_01.jpg", "portfolio_02.jpg", "portfolio_03.jpg"],
     title: "포트폴리오",
     participation: "개인 프로젝트",
-    mainContent: `현재 보고 계신 포트폴리오 웹사이트를 제작하였습니다. 컴포넌트의 재사용성을 높이려고 노력하였고, 평소에 많이 사용해보지 않은 애니매이션 효과를 접할 수 있었습니다. Intersection Observer API를 커스텀 훅으로 활용하여 재사용성이 높은 애니메이션 효과를 구현하였으며, Vercel을 이용하여 웹사이트를 배포하였습니다.
+    mainContent: `현재 보고 계신 포트폴리오 웹사이트를 제작하였습니다. 컴포넌트의 재사용성을 높이려고 노력하였고, 평소에 많이 사용해보지 않은 애니매이션 효과를 접할 수 있었습니다. Intersection Observer API를 커스텀 훅을 활용하여 애니메이션 효과를 주었으며, Vercel을 이용하여 웹사이트를 배포하였습니다.
     
-    포트폴리오 웹사이트 제작 과정에서는 디자인과 색상에 대해 많은 고민을 하였습니다. 포트폴리오이기 때문에 특별한 애착을 두고 만들었으며, 색의 조화와 배색에 대한 디자인 이론적인 부분이 부족하여 어려움을 겪기도 했습니다. 하지만 이러한 어려움을 극복하면서 나만의 스타일로 첫 포트폴리오를 완성하였습니다.
+    포트폴리오 웹사이트 제작 과정에서 디자인과 색상에 대해 많은 고민을 하였습니다. 포트폴리오이기 때문에 특별한 애착을 가지고 만들었으며, 색의 조화와 배색에 대한 디자인 이론적인 부분이 부족하여 어려움을 겪기도 했습니다. 하지만 이러한 어려움을 극복하면서 나만의 스타일로 첫 포트폴리오를 완성하였습니다.
     제 포트폴리오를 통해 제가 어떤 개발자인지와 디자인적인 감각을 보여주고 싶으며, 더 나아가서 더욱 풍부한 경험과 성장으로 더 멋진 프로젝트를 만들어내고 싶습니다.`,
     tools: ["React", "Styled-Components", "반응형"],
     gitURL: "https://github.com/bananashow/wisdom-library",
@@ -165,7 +188,6 @@ export const projects = [
     사용자들의 관심을 끌고, 좀 더 독특하고 눈에 띄게 만들어 흥미를 유발하도록 노력했습니다.
 
     이 업무를 통해 디자인에 대한 역량을 키웠고, 디자인까지 가능한 프론트엔드 개발자를 욕심내게 되었습니다.
-    사용자 경험을 고려한 UI/UX 디자인과 웹 개발의 조합은 저에게 큰 만족감을 주었고, 개발과 디자인을 결합하여 더욱 효율적이고 멋진 결과물을 만들 수 있음을 깨달았습니다.
     `,
     tools: ["photoshop"],
   },

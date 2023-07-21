@@ -85,7 +85,7 @@ export const About = () => {
 const AboutContainer = styled.section`
   background-color: #151417;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   .modal-position {
     position: relative;
@@ -94,14 +94,15 @@ const AboutContainer = styled.section`
 
 const ImageBox = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   max-width: 1400px;
   margin: 0 auto;
 
   .dream-image {
-    height: 100%;
+    min-height: 100vh;
     background: url(${(props) => props.$imageURL}) fixed no-repeat center;
     background-size: 1200px 890px;
+    padding: 32px;
 
     h2 {
       color: #ed8d8d;
