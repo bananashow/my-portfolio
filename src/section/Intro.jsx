@@ -3,23 +3,21 @@ import { BsChevronCompactDown } from "react-icons/bs";
 
 export const Intro = () => {
   return (
-    <>
-      <IntroContainer>
-        <h1>Front-End Developer</h1>
-        <h2>PORTFOLIO</h2>
-        <ScrollDown>
-          <p>Scroll</p>
-          <div className="scroll-icons">
-            <div>
-              <BsChevronCompactDown />
-            </div>
-            <div>
-              <BsChevronCompactDown />
-            </div>
+    <IntroContainer id="introSection">
+      <h1>Front-End Developer</h1>
+      <h2>PORTFOLIO</h2>
+      <ScrollDown>
+        <p>Scroll</p>
+        <div className="scroll-icons">
+          <div>
+            <BsChevronCompactDown />
           </div>
-        </ScrollDown>
-      </IntroContainer>
-    </>
+          <div>
+            <BsChevronCompactDown />
+          </div>
+        </div>
+      </ScrollDown>
+    </IntroContainer>
   );
 };
 

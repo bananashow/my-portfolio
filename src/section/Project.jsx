@@ -4,7 +4,7 @@ import { Works } from "../components/Works";
 export const Project = () => {
   return (
     <>
-      <ProjectContainer>
+      <ProjectContainer id="projectSection">
         <h2>PROJECT</h2>
         <Works />
       </ProjectContainer>

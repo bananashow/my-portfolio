@@ -35,7 +35,7 @@ export const About = () => {
 
   return (
     <>
-      <AboutContainer>
+      <AboutContainer id="aboutSection">
         <div className="modal-position">
           <ImageBox $imageURL={dreamImage}>
             <div className="dream-image">
@@ -59,8 +59,7 @@ export const About = () => {
                 새로운 시도를 두려워 하지 않고, 끊임없이 도전하여 성장하기 위해
                 노력합니다.
                 <br />
-                더 나은 사용자 경험을 제공하기 위해 노력하는 것이 저의
-                목표입니다.
+                함께 성장하고 발전하는 여정을 함께 할 수 있는 곳을 찾습니다.
                 <br />
               </p>
               <div className="button-box" onClick={() => handleModal(true)}>
@@ -200,7 +199,7 @@ const ImageBox = styled.div`
       h2 {
         font-size: 36px;
         line-height: 60px;
-        padding: 150px 0 0 40px;
+        padding: 100px 0 0 40px;
       }
 
       p {

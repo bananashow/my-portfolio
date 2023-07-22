@@ -17,7 +17,7 @@ export const TechStack = () => {
 
   return (
     <>
-      <TechStackContainer backgd={backgd}>
+      <TechStackContainer backgd={backgd} id="techStackSection">
         <AlignBox>
           <h2>TECH STACK</h2>
           {skillImages.map((category, idx) => {
