@@ -1,11 +1,20 @@
 import { styled } from "styled-components";
 import logo from "../assets/my_logo.png";
+import { Link } from "react-scroll";
 
 export const Logo = () => {
   return (
     <>
       <LogoImage>
-        <img src={logo} alt="logo" />
+        <Link
+          activeClass="active"
+          to="introSection"
+          spy={true}
+          smooth={true}
+          duration={400}
+        >
+          <img src={logo} alt="logo" />
+        </Link>
       </LogoImage>
     </>
   );
@@ -18,6 +27,7 @@ const LogoImage = styled.div`
   left: 10px;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 
   img {
     width: 80px;
