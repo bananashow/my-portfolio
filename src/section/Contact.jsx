@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { RiKakaoTalkFill } from "react-icons/ri";
-import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
 import { SiTistory } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import { ContactButton } from "../components/ContactButton";
@@ -13,9 +13,9 @@ export const Contact = () => {
         <div className="my-info">
           <div>
             <ContactButton
-              title="연락처"
-              detail="010. 9942. 3853"
-              icon={<BiSolidPhoneCall />}
+              title="이메일"
+              detail="bananaqick@gmail.com"
+              icon={<MdEmail />}
             ></ContactButton>
           </div>
           <div>

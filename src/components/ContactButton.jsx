@@ -1,19 +1,14 @@
 import { styled } from "styled-components";
 
 export const ContactButton = ({ title, detail, icon, url }) => {
-  const handleCopyToClipboard = (text) => {
-    const textField = document.createElement("textarea");
-    textField.innerText = text;
-    document.body.appendChild(textField);
-    textField.select();
-    document.execCommand("copy");
-    document.body.removeChild(textField);
-    alert("연락처가 클립보드에 복사되었습니다.");
+  const handleEmailSend = (email) => {
+    const mailtoLink = `mailto:${email}}`;
+    window.location.href = mailtoLink;
   };
 
   const handleLink = (url) => {
     if (!url) {
-      handleCopyToClipboard("01099423853");
+      handleEmailSend("bananaqick@gmail.com");
       return;
     }
 
