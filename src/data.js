@@ -43,6 +43,11 @@ export const skillImages = [
         title: "Recoil",
         content: "Atoms과 Selectors의 개념을 알고 사용해요.",
       },
+      {
+        images: "skill_styledComponents.png",
+        title: "Styled-Components",
+        content: "컴포넌트로 스타일을 관리하고 다룰 수 있어요.",
+      },
     ],
   },
   {
@@ -78,11 +83,6 @@ export const skillImages = [
   {
     category: "using tools",
     skillInfo: [
-      {
-        images: "skill_styledComponents.png",
-        title: "Styled-Components",
-        content: "컴포넌트로 스타일을 관리하고 다룰 수 있어요.",
-      },
       {
         images: "skill_photoshop.png",
         title: "Photoshop",
