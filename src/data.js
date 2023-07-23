@@ -213,7 +213,7 @@ export const projects = [
     **관리자 : 도서 등록/수정, 대여된 도서 관리, 공지사항/자유게시판 관리, 회원 목록, 희망도서 신청 목록 관리
     **회원 : 도서 검색, 책 대여, 자유게시판 이용, 희망 도서 신청, 회원 정보 수정, 대여한 도서 목록 등`,
     tools: ["Java", "SpringBoot", "JSP", "MySQL"],
-    gitURL: "https://my-portfolio-eosin-rho.vercel.app/",
+    gitURL: "https://github.com/bananashow/wisdom-library",
   },
 
   {
@@ -226,7 +226,8 @@ export const projects = [
     포트폴리오 웹사이트 제작 과정에서 디자인과 색상에 대해 많은 고민을 하였습니다. 포트폴리오이기 때문에 특별한 애착을 가지고 만들었으며, 색의 조화와 배색에 대한 디자인 이론적인 부분이 부족하여 어려움을 겪기도 했습니다. 하지만 이러한 어려움을 극복하면서 저만의 스타일로 첫 포트폴리오를 완성하였습니다.
     포트폴리오를 통해 제가 어떤 개발자이고, 동시에 디자인적인 감각을 어떻게 담고 싶었는지를 보여주고자 했습니다. 더 나아가, 더욱 풍부한 경험과 성장을 통해 더 멋진 프로젝트를 구현하고자 하는 욕심이 있습니다.`,
     tools: ["React", "Styled-Components", "반응형"],
-    gitURL: "https://github.com/bananashow/wisdom-library",
+    site: "https://my-portfolio-eosin-rho.vercel.app/",
+    gitURL: "https://github.com/bananashow/my-portfolio",
   },
 
   {
