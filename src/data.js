@@ -106,7 +106,7 @@ export const skillImages = [
 export const projects = [
   {
     id: 8,
-    images: ["safeReturn_01.jpg"],
+    images: ["safeReturn_01.jpg", "safeReturn_02.jpg"],
     title: "Safe-Return",
     participation: "개인 프로젝트",
     mainContent: `Safe-Return은 실종자 API를 활용한 웹페이지로, 현재 진행중인 프로젝트입니다.
