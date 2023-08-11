@@ -93,6 +93,11 @@ export const skillImages = [
         title: "Git",
         content: "git을 이용하여 협업이 가능해요.",
       },
+      {
+        images: "skill_figma.png",
+        title: "Figma",
+        content: "Figma를 활용해 와이어프레임을 만들어 봤어요.",
+      },
     ],
   },
 ];
@@ -100,7 +105,21 @@ export const skillImages = [
 // WORKS
 export const projects = [
   {
-    id: 0,
+    id: 8,
+    images: ["safeReturn_01.jpg"],
+    title: "Safe-Return",
+    participation: "개인 프로젝트",
+    mainContent: `Safe-Return은 실종자 API를 활용한 웹페이지로, 현재 진행중인 프로젝트입니다.
+    현재 실종자 검색 기능 및 필터링을 동적으로 구현하려면 전체 데이터가 필요한데, 사용하려는 api의 ‘요청 시 가져올 수 있는 데이터의 수(필수값)’가 최대 100개로 한정되어 있었습니다. 반복문으로 page를 증가시키며 전체 데이터를 꺼냈는데, 로딩시간이 15초나 걸렸습니다. 현재는 Promise.all(), async/await을 통해 병렬로 데이터를 가져오도록 수정하여 5~8초로 단축된 상태입니다.
+    cors-anywhere 오픈 프록시 서버로 CORS error를 임시 해결한 상태이나, http-proxy-middleware 라이브러리를 사용하거나 배포 시 프록시 서버를 직접 구축할 예정입니다.
+    Firebase Authentication를 통해 '이메일/비밀번호 로그인'과 '구글 계정으로 로그인'을 구현하였으며, Firestore를 활용하여 유저의 정보와 게시글, 댓글을 관리하고 있습니다.`,
+    tools: ["JavaScript", "React", "Styled-Components", "Recoil", "firebase"],
+
+    gitURL: "https://github.com/bananashow/safe-return",
+  },
+
+  {
+    id: 7,
     images: [
       "reactShop_01.jpg",
       "reactShop_02.jpg",
@@ -118,7 +137,7 @@ export const projects = [
   },
 
   {
-    id: 1,
+    id: 6,
     images: [
       "najangs_01.jpg",
       "najangs_02.jpg",
@@ -141,7 +160,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 5,
     images: ["meme_01.jpg", "meme_02.jpg", "meme_03.jpg"],
     title: "이경영 밈 생성기",
     participation: "개인 프로젝트",
@@ -169,7 +188,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     images: ["pokemon_01.jpg", "pokemon_02.jpg"],
     title: "포켓몬 도감",
     participation: "개인 프로젝트",
@@ -185,7 +204,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     images: ["yurim_01.jpg", "yurim_02.jpg", "yurim_03.jpg", "yurim_04.jpg"],
     title: "유림 더 숲 인테리어",
     participation: "개인 프로젝트",
@@ -200,7 +219,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 2,
     images: [
       "library_01.jpg",
       "library_02.jpg",
@@ -222,7 +241,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 1,
     images: ["portfolio_01.jpg", "portfolio_02.jpg", "portfolio_03.jpg"],
     title: "포트폴리오",
     participation: "개인 프로젝트",
@@ -236,7 +255,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 0,
     images: [
       "thumbnail_01.jpg",
       "thumbnail_02.jpg",
