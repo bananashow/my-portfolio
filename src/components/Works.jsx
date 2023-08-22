@@ -84,6 +84,18 @@ export const Works = () => {
                         </BasicButton>
                       </Link>
                     )}
+                    &nbsp;
+                    {project.notionURL && (
+                      <Link to={project.notionURL} target="_blank">
+                        <BasicButton
+                          $backgdColor={"#fff"}
+                          $fontColor={"#000"}
+                          $hoverColor={"#c0c0c0"}
+                        >
+                          Notion
+                        </BasicButton>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </ProjectInfo>

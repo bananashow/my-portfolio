@@ -116,6 +116,8 @@ export const projects = [
     tools: ["JavaScript", "React", "Styled-Components", "Recoil", "firebase"],
 
     gitURL: "https://github.com/bananashow/safe-return",
+    notionURL:
+      "https://towering-august-3d2.notion.site/16aa24afa0ee4aa8a6126e75530702ee?pvs=4",
   },
 
   {
