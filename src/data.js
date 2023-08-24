@@ -109,12 +109,13 @@ export const projects = [
     images: ["safeReturn_01.jpg", "safeReturn_02.jpg"],
     title: "Safe-Return",
     participation: "개인 프로젝트",
-    mainContent: `Safe-Return은 실종자 API를 활용한 웹페이지로, 현재 진행중인 프로젝트입니다.
-    현재 실종자 검색 기능 및 필터링을 동적으로 구현하려면 전체 데이터가 필요한데, 사용하려는 api의 ‘요청 시 가져올 수 있는 데이터의 수(필수값)’가 최대 100개로 한정되어 있었습니다. 반복문으로 page를 증가시키며 전체 데이터를 꺼냈는데, 로딩시간이 15초나 걸렸습니다. 현재는 Promise.all(), async/await을 통해 병렬로 데이터를 가져오도록 수정하여 5~8초로 단축된 상태입니다.
-    cors-anywhere 오픈 프록시 서버로 CORS error를 임시 해결한 상태이나, http-proxy-middleware 라이브러리를 사용하거나 배포 시 프록시 서버를 직접 구축할 예정입니다.
-    Firebase Authentication를 통해 '이메일/비밀번호 로그인'과 '구글 계정으로 로그인'을 구현하였으며, Firestore를 활용하여 유저의 정보와 게시글, 댓글을 관리하고 있습니다.`,
+    mainContent: `Safe-Return은 실시간 실종자 정보를 확인할 수 있는 사이트로, 현재 진행중인 프로젝트입니다.
+    실종자 검색 기능 및 필터링을 동적으로 구현하려면 전체 데이터가 필요한데, 사용하려는 api의 ‘요청 시 가져올 수 있는 데이터의 수(필수값)’가 최대 100개로 한정되어 있었습니다. 반복문으로 page를 증가시키며 전체 데이터를 꺼냈는데, 로딩시간이 15초나 걸렸습니다. 현재는 Promise.all(), async/await을 통해 병렬로 데이터를 가져오도록 수정하여 5~8초로 단축된 상태입니다.
+    Cloudflare Workers로 CORS error를 해결했으며, Firebase 인증을 통해 '이메일/비밀번호 로그인'과 '구글 계정으로 로그인'을 구현했습니다. Firestore로 유저의 정보와 게시글, 댓글을 관리하고 있습니다.
+    실종 관련 뉴스를 최신순으로 띄웠으나 Newsapi.org가 로컬 API 호출만 무료로 허용하도록 서비스를 변경한 사실을 알게되어 네이버 뉴스 API로 대체하였고, 해당 API는 뉴스 이미지를 제공하지 않기 때문에 캐러셀 미니 뉴스로 UI를 변경했습니다.`,
     tools: ["JavaScript", "React", "Styled-Components", "Recoil", "firebase"],
 
+    site: "https://safe-return.vercel.app",
     gitURL: "https://github.com/bananashow/safe-return",
     notionURL:
       "https://towering-august-3d2.notion.site/16aa24afa0ee4aa8a6126e75530702ee?pvs=4",
