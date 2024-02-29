@@ -116,6 +116,19 @@ export const skillImages = [
 export const projects = [
   {
     id: 10,
+    images: ['yurim_01.jpg', 'yurim_02.jpg'],
+    title: '유림 더 숲 인테리어',
+    participation: '개인 프로젝트',
+    mainContent: `틈틈이 작업중인 프로젝트로, 백엔드 관리를 최소화할 수 있도록 Supabase를 사용했습니다.
+    이미지와 로고 등의 임시 데이터로 작업해놓은 상태이고, 로그인과 관리자 페이지를 생성 후 직접 카테고리별 데이터를 넣을 수 있도록 기능을 추가 할 예정입니다.
+    검색 및 인스타그램 API 활용 등 추가로 작업이 필요한 상태입니다.`,
+    tools: ['TypeScript', 'React', 'Vite', 'Recoil', 'React-Query', 'Supabase'],
+
+    site: 'https://yurim.vercel.app',
+    gitURL: 'https://github.com/bananashow/yurim',
+  },
+  {
+    id: 9,
     images: ['fridge_01.jpg', 'fridge_02.jpg', 'fridge_03.jpg', 'fridge_04.jpg', 'fridge_05.jpg'],
     title: '냉장고를 부탁해',
     participation: '팀 프로젝트 (FE:2명, BE:3명)',
@@ -128,7 +141,7 @@ export const projects = [
     notionURL: 'https://towering-august-3d2.notion.site/8af31275ddec478d95ecb2db0cf17a49?pvs=4',
   },
   {
-    id: 9,
+    id: 8,
     images: ['foodmate_01.jpg', 'foodmate_02.jpg', 'foodmate_03.jpg', 'foodmate_04.jpg'],
     title: 'FoodMate',
     participation: '팀 프로젝트 (FE:3명, BE:4명)',
@@ -144,7 +157,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 7,
     images: ['safeReturn_01.jpg', 'safeReturn_02.jpg'],
     title: 'Safe-Return',
     participation: '개인 프로젝트',
@@ -160,7 +173,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 6,
     images: ['reactShop_01.jpg', 'reactShop_02.jpg', 'reactShop_03.jpg', 'reactShop_04.jpg'],
     title: '쇼핑몰',
     participation: '개인 프로젝트',
@@ -173,7 +186,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 5,
     images: [
       'najangs_01.jpg',
       'najangs_02.jpg',
@@ -196,7 +209,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 4,
     images: ['meme_01.jpg', 'meme_02.jpg', 'meme_03.jpg'],
     title: '이경영 밈 생성기',
     participation: '개인 프로젝트',
@@ -218,7 +231,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     images: ['pokemon_01.jpg', 'pokemon_02.jpg'],
     title: '포켓몬 도감',
     participation: '개인 프로젝트',
@@ -231,21 +244,6 @@ export const projects = [
     tools: ['React', 'TypeScript', 'Styled-Components'],
     site: 'https://pokemon-iota-lilac.vercel.app/',
     gitURL: 'https://github.com/bananashow/pokemon',
-  },
-
-  {
-    id: 3,
-    images: ['yurim_01.jpg', 'yurim_02.jpg', 'yurim_03.jpg', 'yurim_04.jpg'],
-    title: '유림 더 숲 인테리어',
-    participation: '개인 프로젝트',
-    mainContent: `스프링 MVC를 기반으로 한 인테리어 회사 웹사이트를 제작하였습니다.
-    로그인 기능이 구현되어 사용자의 세션을 처리하여 관리자 로그인 시 서브 카테고리가 보여집니다.
-    관리자는 각 카테고리별로 글을 작성하고 인테리어 이미지를 등록하고 수정할 수 있습니다. 또한, 문의글 관리 기능도 추가하여 고객들과 contact 할 수 있도록 하였습니다.
-    
-    파일 업로드를 처음 구현해 보았고, 실제 cafe24를 통해 호스팅하여 서비스를 제공하였습니다.
-    현재는 서비스가 중단되었습니다.`,
-    tools: ['Java', 'SpringBoot', 'JSP', 'MySQL'],
-    gitURL: 'https://github.com/bananashow/yurimthesup',
   },
 
   {
