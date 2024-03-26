@@ -116,13 +116,13 @@ export const skillImages = [
 export const projects = [
   {
     id: 10,
-    images: ['yurim_01.jpg', 'yurim_02.jpg'],
+    images: ['yurim_01.jpg', 'yurim_02.jpg', 'yurim_03.jpg', 'yurim_04.jpg', 'yurim_05.jpg'],
     title: '유림 더 숲 인테리어',
     participation: '개인 프로젝트',
-    mainContent: `틈틈이 작업중인 프로젝트로, 백엔드 관리를 최소화할 수 있도록 Supabase를 사용했습니다.
-    이미지와 로고 등의 임시 데이터로 작업해놓은 상태이고, 로그인과 관리자 페이지를 생성 후 직접 카테고리별 데이터를 넣을 수 있도록 기능을 추가 할 예정입니다.
-    검색 및 인스타그램 API 활용 등 추가로 작업이 필요한 상태입니다.`,
-    tools: ['TypeScript', 'React', 'Vite', 'Recoil', 'React-Query', 'Supabase'],
+    mainContent: `현재 진행 중인 프로젝트는 실제 서비스로 이어질 수 있도록 틈틈이 작업 중입니다. 백엔드 관리를 최소화하기 위해 Supabase를 활용하고 있습니다. 데이터베이스에는 캐러셀, 견적 요청, 카테고리별 포스팅을 다루기 위한 테이블이 구축되었으며, 사용자 인증은 이메일을 통한 로그인 후 토큰을 받아오고 있습니다. 이미지 관리를 위해 스토리지를 활용하고 있으며, 이미지와 로고 등은 현재 임시 데이터로 대체되어 있습니다.
+    추가적으로 로그인 및 관리자 페이지를 구현하여 관리자가 카테고리별 데이터를 직접 입력, 수정, 삭제할 수 있도록 만들었고, 견적 요청 리스트를 확인할 수 있도록 하였습니다. 
+    현재 검색 기능과 인스타그램 API를 활용한 추가 기능 및 기획이 필요한 상태입니다.`,
+    tools: ['TypeScript', 'React', 'Vite', 'Recoil', 'React-Query', 'Supabase', 'MUI'],
 
     site: 'https://yurim.vercel.app',
     gitURL: 'https://github.com/bananashow/yurim',
