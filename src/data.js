@@ -19,6 +19,11 @@ export const skillImages = [
         content: '문법을 이해하고, DOM 조작과 이벤트 처리가 가능해요.',
       },
       {
+        images: 'skill_typescript.png',
+        title: 'TypeScript',
+        content: '타입을 이해하고, 코드의 안정성을 높혀요.',
+      },
+      {
         images: 'skill_react.png',
         title: 'React',
         content: '상태와 속성, 조건부 렌더링 등을 다룰 수 있어요.',
@@ -29,24 +34,19 @@ export const skillImages = [
         content: '데이터 바인딩, 이벤트 처리 등을 구현해요.',
       },
       {
-        images: 'skill_typescript.png',
-        title: 'TypeScript',
-        content: '타입을 이해하고, 코드의 안정성을 높혀요.',
-      },
-      {
         images: 'skill_redux.png',
         title: 'Redux',
-        content: 'Redux를 이용하여 전역 상태 관리를 해봤어요.',
+        content: 'Redux를 이용하여 전역 상태 관리 경험이 있어요.',
       },
       {
         images: 'skill_reactquery.png',
         title: 'React-Query',
-        content: '불필요한 호출을 줄이고, 무한스크롤을 구현해요',
+        content: '불필요한 호출을 줄이고, 키를 효율적으로 관리해요.',
       },
       {
         images: 'skill_recoil.png',
         title: 'Recoil',
-        content: 'Atoms과 Selectors의 개념을 알고 사용해요.',
+        content: 'Atom과 Selectors의 개념을 알고 사용해요.',
       },
       {
         images: 'skill_styledComponents.png',
@@ -59,9 +59,14 @@ export const skillImages = [
     category: 'back-end',
     skillInfo: [
       {
+        images: 'skill_supabase.png',
+        title: 'Supabase',
+        content: 'DB, 인증, 스토리지 기능을 활용할 수 있어요.',
+      },
+      {
         images: 'skill_firebase.png',
         title: 'Firebase',
-        content: 'DB, 인증, 스토리지 기능을 활용할 수 있어요',
+        content: 'DB, 인증, 스토리지 기능을 활용할 수 있어요.',
       },
       {
         images: 'skill_java.png',
@@ -81,7 +86,7 @@ export const skillImages = [
       {
         images: 'skill_python.png',
         title: 'Python',
-        content: '저의 입문 언어로, 문법을 학습하여 사용할 수 있어요.',
+        content: '저의 입문 언어로, 문법과 함수를 학습했어요.',
       },
       {
         images: 'skill_mysql.png',
@@ -116,7 +121,7 @@ export const skillImages = [
 export const projects = [
   {
     id: 10,
-    images: ['yurim_01.jpg', 'yurim_02.jpg', 'yurim_03.jpg', 'yurim_04.jpg', 'yurim_05.jpg'],
+    images: ['yurim_01.jpg', 'yurim_02.jpg', 'yurim_03.jpg', 'yurim_04.jpg', 'yurim_05.jpg', 'yurim_06.jpg'],
     title: '유림 더 숲 인테리어',
     participation: '개인 프로젝트',
     mainContent: `현재 진행 중인 프로젝트는 실제 서비스로 이어질 수 있도록 틈틈이 작업 중입니다. 백엔드 관리를 최소화하기 위해 Supabase를 활용하고 있습니다. 데이터베이스에는 캐러셀, 견적 요청, 카테고리별 포스팅을 다루기 위한 테이블이 구축되었으며, 사용자 인증은 이메일을 통한 로그인 후 토큰을 받아오고 있습니다. 이미지 관리를 위해 스토리지를 활용하고 있으며, 이미지와 로고 등은 현재 임시 데이터로 대체되어 있습니다.

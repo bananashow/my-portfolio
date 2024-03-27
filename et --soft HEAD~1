@@ -1,0 +1,27 @@
+[33mfd8fb4a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m feat : 데이터 추가
+[33m2e52455[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m feat : 프로젝트 내용 및 이미지 추가
+[33m3fb217c[m feat : 유림 프로젝트 추가 및 기존 프로젝트 삭제
+[33m3152c41[m feat : 프로젝트 및 스킬 추가
+[33mecbc52f[m Update RightModal.jsx
+[33m1c6a90c[m feat : 프로젝트 추가
+[33m864d421[m style : 이미지 추가
+[33m66163d3[m 개인 프로젝트 수정
+[33medb3d90[m notion url 추가
+[33me9625cc[m 프로젝트 이미지 추가
+[33m43e9d7a[m 스킬 및 프로젝트 추가
+[33m7d3d67e[m 프로젝트 설명 추가
+[33mfb06ee6[m Update README.md
+[33md64bb71[m Update README.md
+[33mc3db82e[m 기술 스택 수정
+[33m869bcae[m site, gitURL 수정
+[33m67ea8a7[m 연락처 삭제
+[33m39bf364[m 로고 클릭 시 Intro section으로 이동 구현
+[33mec4919b[m Contact section 완성 및 navbar 기능 구현
+[33mb61de43[m useIntersectionObserver hook을 이용한 애니메이션 추가
+[33mafe7460[m 전체적인 스타일 수정, TechStack 섹션 마무리 작업
+[33m38de7e7[m add tooltip
+[33m3511022[m add TechStack page, image retouch
+[33m9d4533a[m Merge branch 'master' of https://github.com/bananashow/my-portfolio
+[33m113a6b4[m add favicon, delete images
+[33m66d9395[m Update README.md
+[33ma6ae727[m first commit
